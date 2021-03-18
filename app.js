@@ -9,7 +9,15 @@ const greenButton = document.getElementById('green-button')
 const blueButton = document.getElementById('blue-button')
 const backgroundColor = document.getElementById('name-tag-background')
 const counter = document.getElementById('counter') 
+const monospace = document.getElementById('monospace')
+const cursive = document.getElementById('cursive')
+const fantasy = document.getElementById('fantasy')
 
+let clicks = 0;
+function onClick () {
+    clicks++;
+    counter.textContent = clicks;
+}
 
 nameButton.addEventListener('click', () => {
     const newName = input.value;
@@ -40,8 +48,17 @@ blueButton.addEventListener ('click', () => {
     onClick ()
 })
 
-let clicks = 0;
-function onClick () {
-    clicks++;
-    counter.textContent = clicks;
-}
+monospace.addEventListener ('click', () => {
+    myName.style.fontFamily = 'monospace'; 
+    onClick ()
+})
+
+cursive.addEventListener ('click', () => {
+    myName.style.fontFamily = 'cursive'; 
+    onClick ()
+})
+
+fantasy.addEventListener ('click', () => {
+    myName.style.fontFamily = 'fantasy'; 
+    onClick ()
+})

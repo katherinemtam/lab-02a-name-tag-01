@@ -15,12 +15,6 @@ body{
     box-sizing: border-box;
 }
 
- div {
-    display: grid;
-    justify-content: center;
-    align-items: center;
- }
-
 .name-tag-background {
     height: 300px;
     width: 400px;
@@ -33,14 +27,20 @@ body{
 .hello {
     color: white;
     font-size: 70px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .my-name-is {
     color:white;
     font-size: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
-.name {
+#name {
     background-color: white;
     font-size: 50px;
     height: 130px;

@@ -22,8 +22,6 @@ body {
     align-items: center;
  }
 
-
-
 #name-tag-background {
     height: 300px;
     width: 400px;
@@ -74,4 +72,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    margin: 5px;
 }

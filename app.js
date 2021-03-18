@@ -10,36 +10,38 @@ const blueButton = document.getElementById('blue-button')
 const backgroundColor = document.getElementById('name-tag-background')
 const counter = document.getElementById('counter') 
 
-console.log(pronouns, pronounsInput, pronounsButton)
 
 nameButton.addEventListener('click', () => {
     const newName = input.value;
     myName.textContent = newName;
     input.value = " ";
+    onClick();
 });
 
 pronounsButton.addEventListener('click', () => {
     const newPronouns = pronounsInput.value;
     pronouns.textContent = newPronouns;
     input.value = " ";
+    onClick ()
 });
 
 pinkButton.addEventListener ('click', () => {
     backgroundColor.style.backgroundColor = 'pink'; 
+    onClick ()
 })
 
 greenButton.addEventListener ('click', () => {
     backgroundColor.style.backgroundColor = 'lightgreen'; 
+    onClick ()
 })
 
 blueButton.addEventListener ('click', () => {
     backgroundColor.style.backgroundColor = 'lightblue'; 
+    onClick ()
 })
 
-
-
-// let a = 0;
-// function onClick () {
-//     a++;
-//     counter.textContent = a;
-// }
+let clicks = 0;
+function onClick () {
+    clicks++;
+    counter.textContent = clicks;
+}

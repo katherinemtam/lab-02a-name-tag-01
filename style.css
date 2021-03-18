@@ -5,23 +5,33 @@ body, html {
     margin: 0;
 }
 
-body{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
 * {
     box-sizing: border-box;
 }
 
-.name-tag-background {
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+#name-tag-background {
     height: 300px;
     width: 400px;
     background-color: red;
     border-radius: 5%;
     grid-template-rows: 35% auto 10%;
     box-shadow: 2px 2px 10px 2px;
+    margin: 20px;
 }
 
 .hello {
@@ -49,4 +59,15 @@ body{
     justify-content: center;
     align-items: center;
     font-family: cursive;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    padding: 10px;
 }
